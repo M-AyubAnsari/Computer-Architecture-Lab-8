@@ -7,6 +7,14 @@ create_clock -period 10.000 -name sys_clk [get_ports clk]
 set_property PACKAGE_PIN U18 [get_ports rst]
 set_property IOSTANDARD LVCMOS33 [get_ports rst]
 
+## Write Button (Right Button)
+set_property PACKAGE_PIN T17 [get_ports btnWrite]
+set_property IOSTANDARD LVCMOS33 [get_ports btnWrite]
+
+## Read Button (Left Button)
+set_property PACKAGE_PIN U17 [get_ports btnRead]
+set_property IOSTANDARD LVCMOS33 [get_ports btnRead]
+
 ## Switches (16 bits)
 set_property PACKAGE_PIN V17 [get_ports {switches[0]}]
 set_property PACKAGE_PIN V16 [get_ports {switches[1]}]
